@@ -1,0 +1,1310 @@
+debug 2020-11-19 05:47:31.730 7fd570d8a040  0 setuser_match_path /var/lib/ceph/mon/ceph-b/store.db owned by 167:167. set uid:gid to 167:167 (ceph:ceph)
+debug 2020-11-19 05:47:31.730 7fd570d8a040  0 ceph version 14.2.8 (2d095e947a02261ce61424021bb43bd3022d35cb) nautilus (stable), process ceph-mon, pid 1
+debug 2020-11-19 05:47:31.730 7fd570d8a040  0 pidfile_write: ignore empty --pid-file
+debug 2020-11-19 05:47:31.777 7fd570d8a040  0 load: jerasure load: lrc load: isa 
+debug 2020-11-19 05:47:31.778 7fd570d8a040  0  set rocksdb option compression = kNoCompression
+debug 2020-11-19 05:47:31.778 7fd570d8a040  0  set rocksdb option level_compaction_dynamic_level_bytes = true
+debug 2020-11-19 05:47:31.778 7fd570d8a040  0  set rocksdb option write_buffer_size = 33554432
+debug 2020-11-19 05:47:31.778 7fd570d8a040  0  set rocksdb option compression = kNoCompression
+debug 2020-11-19 05:47:31.778 7fd570d8a040  0  set rocksdb option level_compaction_dynamic_level_bytes = true
+debug 2020-11-19 05:47:31.778 7fd570d8a040  0  set rocksdb option write_buffer_size = 33554432
+debug 2020-11-19 05:47:31.778 7fd570d8a040  1 rocksdb: do_open column families: [default]
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb: RocksDB version: 6.1.2
+
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb: Git sha rocksdb_build_git_sha:@0@
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb: Compile date Mar  2 2020
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb: DB SUMMARY
+
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb: CURRENT file:  CURRENT
+
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb: IDENTITY file:  IDENTITY
+
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb: MANIFEST file:  MANIFEST-362705 size: 184 Bytes
+
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb: SST files in /var/lib/ceph/mon/ceph-b/store.db dir, Total Num: 2, files: 332267.sst 332269.sst 
+
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb: Write Ahead Log file in /var/lib/ceph/mon/ceph-b/store.db: 362706.log size: 0 ; 
+
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                         Options.error_if_exists: 0
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                       Options.create_if_missing: 0
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                         Options.paranoid_checks: 1
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                                     Options.env: 0x5567c228d300
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                                Options.info_log: 0x5567c53fe3e0
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                Options.max_file_opening_threads: 16
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                              Options.statistics: (nil)
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                               Options.use_fsync: 0
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                       Options.max_log_file_size: 0
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                  Options.max_manifest_file_size: 1073741824
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                   Options.log_file_time_to_roll: 0
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                       Options.keep_log_file_num: 1000
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                    Options.recycle_log_file_num: 0
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                         Options.allow_fallocate: 1
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                        Options.allow_mmap_reads: 0
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                       Options.allow_mmap_writes: 0
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                        Options.use_direct_reads: 0
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                        Options.use_direct_io_for_flush_and_compaction: 0
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:          Options.create_missing_column_families: 0
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                              Options.db_log_dir: 
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                                 Options.wal_dir: /var/lib/ceph/mon/ceph-b/store.db
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                Options.table_cache_numshardbits: 6
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                      Options.max_subcompactions: 1
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                  Options.max_background_flushes: -1
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                         Options.WAL_ttl_seconds: 0
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                       Options.WAL_size_limit_MB: 0
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:             Options.manifest_preallocation_size: 4194304
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                     Options.is_fd_close_on_exec: 1
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                   Options.advise_random_on_open: 1
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                    Options.db_write_buffer_size: 0
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                    Options.write_buffer_manager: 0x5567c54f0420
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:         Options.access_hint_on_compaction_start: 1
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:  Options.new_table_reader_for_compaction_inputs: 0
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:           Options.random_access_max_buffer_size: 1048576
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                      Options.use_adaptive_mutex: 0
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                            Options.rate_limiter: (nil)
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:     Options.sst_file_manager.rate_bytes_per_sec: 0
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                       Options.wal_recovery_mode: 2
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                  Options.enable_thread_tracking: 0
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                  Options.enable_pipelined_write: 0
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:         Options.allow_concurrent_memtable_write: 1
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:      Options.enable_write_thread_adaptive_yield: 1
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:             Options.write_thread_max_yield_usec: 100
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:            Options.write_thread_slow_yield_usec: 3
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                               Options.row_cache: None
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                              Options.wal_filter: None
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:             Options.avoid_flush_during_recovery: 0
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:             Options.allow_ingest_behind: 0
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:             Options.preserve_deletes: 0
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:             Options.two_write_queues: 0
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:             Options.manual_wal_flush: 0
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:             Options.atomic_flush: 0
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:             Options.avoid_unnecessary_blocking_io: 0
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:             Options.max_background_jobs: 2
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:             Options.max_background_compactions: -1
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:             Options.avoid_flush_during_shutdown: 0
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:           Options.writable_file_max_buffer_size: 1048576
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:             Options.delayed_write_rate : 16777216
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:             Options.max_total_wal_size: 0
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:             Options.delete_obsolete_files_period_micros: 21600000000
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                   Options.stats_dump_period_sec: 600
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                 Options.stats_persist_period_sec: 600
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                 Options.stats_history_buffer_size: 1048576
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                          Options.max_open_files: -1
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                          Options.bytes_per_sync: 0
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                      Options.wal_bytes_per_sync: 0
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:       Options.compaction_readahead_size: 0
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb: Compression algorithms supported:
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb: 	kZSTDNotFinalCompression supported: 0
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb: 	kZSTD supported: 0
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb: 	kXpressCompression supported: 0
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb: 	kLZ4HCCompression supported: 1
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb: 	kLZ4Compression supported: 1
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb: 	kBZip2Compression supported: 0
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb: 	kZlibCompression supported: 1
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb: 	kSnappyCompression supported: 1
+debug 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb: Fast CRC32 supported: Supported on x86
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb: [db/version_set.cc:3543] Recovering from manifest file: /var/lib/ceph/mon/ceph-b/store.db/MANIFEST-362705
+
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb: [db/column_family.cc:477] --------------- Options for column family [default]:
+
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:               Options.comparator: leveldb.BytewiseComparator
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:           Options.merge_operator: 
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:        Options.compaction_filter: None
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:        Options.compaction_filter_factory: None
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:         Options.memtable_factory: SkipListFactory
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:            Options.table_factory: BlockBasedTable
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:            table_factory options:   flush_block_policy_factory: FlushBlockBySizePolicyFactory (0x5567c4786248)
+  cache_index_and_filter_blocks: 1
+  cache_index_and_filter_blocks_with_high_priority: 1
+  pin_l0_filter_and_index_blocks_in_cache: 0
+  pin_top_level_index_and_filter: 1
+  index_type: 0
+  data_block_index_type: 0
+  data_block_hash_table_util_ratio: 0.750000
+  hash_index_allow_collision: 1
+  checksum: 1
+  no_block_cache: 0
+  block_cache: 0x5567c47a2f10
+  block_cache_name: BinnedLRUCache
+  block_cache_options:
+    capacity : 536870912
+    num_shard_bits : 4
+    strict_capacity_limit : 0
+    high_pri_pool_ratio: 0.000
+  block_cache_compressed: (nil)
+  persistent_cache: (nil)
+  block_size: 4096
+  block_size_deviation: 10
+  block_restart_interval: 16
+  index_block_restart_interval: 1
+  metadata_block_size: 4096
+  partition_filters: 0
+  use_delta_encoding: 1
+  filter_policy: rocksdb.BuiltinBloomFilter
+  whole_key_filtering: 1
+  verify_compression: 0
+  read_amp_bytes_per_bit: 0
+  format_version: 2
+  enable_index_compression: 1
+  block_align: 0
+
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:        Options.write_buffer_size: 33554432
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:  Options.max_write_buffer_number: 2
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:          Options.compression: NoCompression
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:                  Options.bottommost_compression: Disabled
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:       Options.prefix_extractor: nullptr
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:   Options.memtable_insert_with_hint_prefix_extractor: nullptr
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:             Options.num_levels: 7
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:        Options.min_write_buffer_number_to_merge: 1
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:     Options.max_write_buffer_number_to_maintain: 0
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:            Options.bottommost_compression_opts.window_bits: -14
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:                  Options.bottommost_compression_opts.level: 32767
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:               Options.bottommost_compression_opts.strategy: 0
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:         Options.bottommost_compression_opts.max_dict_bytes: 0
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:         Options.bottommost_compression_opts.zstd_max_train_bytes: 0
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:                  Options.bottommost_compression_opts.enabled: false
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:            Options.compression_opts.window_bits: -14
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:                  Options.compression_opts.level: 32767
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:               Options.compression_opts.strategy: 0
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:         Options.compression_opts.max_dict_bytes: 0
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:         Options.compression_opts.zstd_max_train_bytes: 0
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:                  Options.compression_opts.enabled: false
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:      Options.level0_file_num_compaction_trigger: 4
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:          Options.level0_slowdown_writes_trigger: 20
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:              Options.level0_stop_writes_trigger: 36
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:                   Options.target_file_size_base: 67108864
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:             Options.target_file_size_multiplier: 1
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:                Options.max_bytes_for_level_base: 268435456
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb: Options.level_compaction_dynamic_level_bytes: 1
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:          Options.max_bytes_for_level_multiplier: 10.000000
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb: Options.max_bytes_for_level_multiplier_addtl[0]: 1
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb: Options.max_bytes_for_level_multiplier_addtl[1]: 1
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb: Options.max_bytes_for_level_multiplier_addtl[2]: 1
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb: Options.max_bytes_for_level_multiplier_addtl[3]: 1
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb: Options.max_bytes_for_level_multiplier_addtl[4]: 1
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb: Options.max_bytes_for_level_multiplier_addtl[5]: 1
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb: Options.max_bytes_for_level_multiplier_addtl[6]: 1
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:       Options.max_sequential_skip_in_iterations: 8
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:                    Options.max_compaction_bytes: 1677721600
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:                        Options.arena_block_size: 4194304
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:   Options.soft_pending_compaction_bytes_limit: 68719476736
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:   Options.hard_pending_compaction_bytes_limit: 274877906944
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:       Options.rate_limit_delay_max_milliseconds: 100
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:                Options.disable_auto_compactions: 0
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:                        Options.compaction_style: kCompactionStyleLevel
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:                          Options.compaction_pri: kMinOverlappingRatio
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb: Options.compaction_options_universal.size_ratio: 1
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb: Options.compaction_options_universal.min_merge_width: 2
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb: Options.compaction_options_universal.max_merge_width: 4294967295
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb: Options.compaction_options_universal.max_size_amplification_percent: 200
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb: Options.compaction_options_universal.compression_size_percent: -1
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb: Options.compaction_options_universal.stop_style: kCompactionStopStyleTotalSize
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb: Options.compaction_options_fifo.max_table_files_size: 1073741824
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb: Options.compaction_options_fifo.allow_compaction: 0
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:                   Options.table_properties_collectors: 
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:                   Options.inplace_update_support: 0
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:                 Options.inplace_update_num_locks: 10000
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:               Options.memtable_prefix_bloom_size_ratio: 0.000000
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:               Options.memtable_whole_key_filtering: 0
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:   Options.memtable_huge_page_size: 0
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:                           Options.bloom_locality: 0
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:                    Options.max_successive_merges: 0
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:                Options.optimize_filters_for_hits: 0
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:                Options.paranoid_file_checks: 0
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:                Options.force_consistency_checks: 0
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:                Options.report_bg_io_stats: 0
+debug 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:                               Options.ttl: 0
+debug 2020-11-19 05:47:31.792 7fd570d8a040  3 rocksdb: [db/version_set.cc:2581] More existing levels in DB than needed. max_bytes_for_level_multiplier may not be guaranteed.
+debug 2020-11-19 05:47:31.792 7fd570d8a040  4 rocksdb: [db/version_set.cc:3757] Recovered from manifest file:/var/lib/ceph/mon/ceph-b/store.db/MANIFEST-362705 succeeded,manifest_file_number is 362705, next_file_number is 362707, last_sequence is 149449722, log_number is 362704,prev_log_number is 0,max_column_family is 0,min_log_number_to_keep is 0
+
+debug 2020-11-19 05:47:31.792 7fd570d8a040  4 rocksdb: [db/version_set.cc:3766] Column family [default] (ID 0), log number is 362704
+
+debug 2020-11-19 05:47:31.792 7fd570d8a040  4 rocksdb: EVENT_LOG_v1 {"time_micros": 1605764851793410, "job": 1, "event": "recovery_started", "log_files": [362706]}
+debug 2020-11-19 05:47:31.792 7fd570d8a040  4 rocksdb: [db/db_impl_open.cc:583] Recovering log #362706 mode 2
+debug 2020-11-19 05:47:31.792 7fd570d8a040  4 rocksdb: [db/version_set.cc:3036] Creating manifest 362708
+
+debug 2020-11-19 05:47:31.793 7fd570d8a040  3 rocksdb: [db/version_set.cc:2581] More existing levels in DB than needed. max_bytes_for_level_multiplier may not be guaranteed.
+debug 2020-11-19 05:47:31.794 7fd570d8a040  4 rocksdb: EVENT_LOG_v1 {"time_micros": 1605764851795506, "job": 1, "event": "recovery_finished"}
+debug 2020-11-19 05:47:31.797 7fd570d8a040  4 rocksdb: DB pointer 0x5567c53cf200
+debug 2020-11-19 05:47:31.798 7fd55661e700  4 rocksdb: [db/db_impl.cc:777] ------- DUMPING STATS -------
+debug 2020-11-19 05:47:31.798 7fd55661e700  4 rocksdb: [db/db_impl.cc:778] 
+** DB Stats **
+Uptime(secs): 0.0 total, 0.0 interval
+Cumulative writes: 0 writes, 0 keys, 0 commit groups, 0.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 0 writes, 0 syncs, 0.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 0 writes, 0 keys, 0 commit groups, 0.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 0 writes, 0 syncs, 0.00 writes per sync, written: 0.00 MB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+
+** Compaction Stats [default] **
+Level    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  L0      1/0   180.75 KB   0.2      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0
+  L6      1/0   23.80 MB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0
+ Sum      2/0   23.98 MB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0
+ Int      0/0    0.00 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0
+
+** Compaction Stats [default] **
+Priority    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Uptime(secs): 0.0 total, 0.0 interval
+Flush(GB): cumulative 0.000, interval 0.000
+AddFile(GB): cumulative 0.000, interval 0.000
+AddFile(Total Files): cumulative 0, interval 0
+AddFile(L0 Files): cumulative 0, interval 0
+AddFile(Keys): cumulative 0, interval 0
+Cumulative compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
+Interval compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
+Stalls(count): 0 level0_slowdown, 0 level0_slowdown_with_compaction, 0 level0_numfiles, 0 level0_numfiles_with_compaction, 0 stop for pending_compaction_bytes, 0 slowdown for pending_compaction_bytes, 0 memtable_compaction, 0 memtable_slowdown, interval 0 total count
+
+** File Read Latency Histogram By Level [default] **
+
+** Compaction Stats [default] **
+Level    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  L0      1/0   180.75 KB   0.2      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0
+  L6      1/0   23.80 MB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0
+ Sum      2/0   23.98 MB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0
+ Int      0/0    0.00 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0
+
+** Compaction Stats [default] **
+Priority    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Uptime(secs): 0.0 total, 0.0 interval
+Flush(GB): cumulative 0.000, interval 0.000
+AddFile(GB): cumulative 0.000, interval 0.000
+AddFile(Total Files): cumulative 0, interval 0
+AddFile(L0 Files): cumulative 0, interval 0
+AddFile(Keys): cumulative 0, interval 0
+Cumulative compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
+Interval compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
+Stalls(count): 0 level0_slowdown, 0 level0_slowdown_with_compaction, 0 level0_numfiles, 0 level0_numfiles_with_compaction, 0 stop for pending_compaction_bytes, 0 slowdown for pending_compaction_bytes, 0 memtable_compaction, 0 memtable_slowdown, interval 0 total count
+
+** File Read Latency Histogram By Level [default] **
+
+debug 2020-11-19 05:47:31.801 7fd570d8a040  0 starting mon.b rank 0 at public addrs [v2:10.104.200.156:3300/0,v1:10.104.200.156:6789/0] at bind addrs [v2:10.244.194.133:3300/0,v1:10.244.194.133:6789/0] mon_data /var/lib/ceph/mon/ceph-b fsid dedb80df-d16c-4a90-912e-a833a97c3f52
+debug 2020-11-19 05:47:31.805 7fd570d8a040  1 mon.b@-1(???) e7 preinit fsid dedb80df-d16c-4a90-912e-a833a97c3f52
+debug 2020-11-19 05:47:31.806 7fd570d8a040  0 mon.b@-1(???).mds e1 new map
+debug 2020-11-19 05:47:31.806 7fd570d8a040  0 mon.b@-1(???).mds e1 print_map
+e1
+enable_multiple, ever_enabled_multiple: 0,0
+compat: compat={},rocompat={},incompat={1=base v0.20,2=client writeable ranges,3=default file layouts on dirs,4=dir inode in separate object,5=mds uses versioned encoding,6=dirfrag is stored in omap,8=no anchor table,9=file layout v2,10=snaprealm v2}
+legacy client fscid: -1
+ 
+No filesystems configured
+
+debug 2020-11-19 05:47:31.806 7fd570d8a040  0 mon.b@-1(???).osd e151 crush map has features 288514051259236352, adjusting msgr requires
+debug 2020-11-19 05:47:31.806 7fd570d8a040  0 mon.b@-1(???).osd e151 crush map has features 288514051259236352, adjusting msgr requires
+debug 2020-11-19 05:47:31.806 7fd570d8a040  0 mon.b@-1(???).osd e151 crush map has features 3314933000852226048, adjusting msgr requires
+debug 2020-11-19 05:47:31.806 7fd570d8a040  0 mon.b@-1(???).osd e151 crush map has features 288514051259236352, adjusting msgr requires
+audit 2020-10-14 06:29:16.580659 mon.f (mon.4) 868424 : audit [DBG] from='admin socket' entity='admin socket' cmd='mon_status' args=[]: dispatch
+audit 2020-10-14 06:29:16.581013 mon.f (mon.4) 868425 : audit [DBG] from='admin socket' entity='admin socket' cmd=mon_status args=[]: finished
+debug 2020-11-19 05:47:31.807 7fd570d8a040  1 mon.b@-1(???).paxosservice(auth 4251..4503) refresh upgraded, format 0 -> 3
+/home/jenkins-build/build/workspace/ceph-build/ARCH/x86_64/AVAILABLE_ARCH/x86_64/AVAILABLE_DIST/centos7/DIST/centos7/MACHINE_SIZE/huge/release/14.2.8/rpm/el7/BUILD/ceph-14.2.8/src/mon/AuthMonitor.cc: In function 'virtual void AuthMonitor::update_from_paxos(bool*)' thread 7fd570d8a040 time 2020-11-19 05:47:31.809152
+/home/jenkins-build/build/workspace/ceph-build/ARCH/x86_64/AVAILABLE_ARCH/x86_64/AVAILABLE_DIST/centos7/DIST/centos7/MACHINE_SIZE/huge/release/14.2.8/rpm/el7/BUILD/ceph-14.2.8/src/mon/AuthMonitor.cc: 278: FAILED ceph_assert(ret == 0)
+ ceph version 14.2.8 (2d095e947a02261ce61424021bb43bd3022d35cb) nautilus (stable)
+ 1: (ceph::__ceph_assert_fail(char const*, char const*, int, char const*)+0x14a) [0x7fd567ffc325]
+ 2: (()+0x2534ed) [0x7fd567ffc4ed]
+ 3: (AuthMonitor::update_from_paxos(bool*)+0x1b0a) [0x5567c1b31f3a]
+ 4: (PaxosService::refresh(bool*)+0x103) [0x5567c1bc53a3]
+ 5: (Monitor::refresh_from_paxos(bool*)+0x194) [0x5567c1ab3514]
+ 6: (Monitor::init_paxos()+0xfc) [0x5567c1ab37ec]
+ 7: (Monitor::preinit()+0xa32) [0x5567c1ad2532]
+ 8: (main()+0x23e2) [0x5567c1a6bfc2]
+ 9: (__libc_start_main()+0xf5) [0x7fd563bd2555]
+ 10: (()+0x2332d0) [0x5567c1a9d2d0]
+debug 2020-11-19 05:47:31.809 7fd570d8a040 -1 /home/jenkins-build/build/workspace/ceph-build/ARCH/x86_64/AVAILABLE_ARCH/x86_64/AVAILABLE_DIST/centos7/DIST/centos7/MACHINE_SIZE/huge/release/14.2.8/rpm/el7/BUILD/ceph-14.2.8/src/mon/AuthMonitor.cc: In function 'virtual void AuthMonitor::update_from_paxos(bool*)' thread 7fd570d8a040 time 2020-11-19 05:47:31.809152
+/home/jenkins-build/build/workspace/ceph-build/ARCH/x86_64/AVAILABLE_ARCH/x86_64/AVAILABLE_DIST/centos7/DIST/centos7/MACHINE_SIZE/huge/release/14.2.8/rpm/el7/BUILD/ceph-14.2.8/src/mon/AuthMonitor.cc: 278: FAILED ceph_assert(ret == 0)
+
+ ceph version 14.2.8 (2d095e947a02261ce61424021bb43bd3022d35cb) nautilus (stable)
+ 1: (ceph::__ceph_assert_fail(char const*, char const*, int, char const*)+0x14a) [0x7fd567ffc325]
+ 2: (()+0x2534ed) [0x7fd567ffc4ed]
+ 3: (AuthMonitor::update_from_paxos(bool*)+0x1b0a) [0x5567c1b31f3a]
+ 4: (PaxosService::refresh(bool*)+0x103) [0x5567c1bc53a3]
+ 5: (Monitor::refresh_from_paxos(bool*)+0x194) [0x5567c1ab3514]
+ 6: (Monitor::init_paxos()+0xfc) [0x5567c1ab37ec]
+ 7: (Monitor::preinit()+0xa32) [0x5567c1ad2532]
+ 8: (main()+0x23e2) [0x5567c1a6bfc2]
+ 9: (__libc_start_main()+0xf5) [0x7fd563bd2555]
+ 10: (()+0x2332d0) [0x5567c1a9d2d0]
+
+*** Caught signal (Aborted) **
+ in thread 7fd570d8a040 thread_name:ceph-mon
+ ceph version 14.2.8 (2d095e947a02261ce61424021bb43bd3022d35cb) nautilus (stable)
+ 1: (()+0xf630) [0x7fd564df2630]
+ 2: (gsignal()+0x37) [0x7fd563be6387]
+ 3: (abort()+0x148) [0x7fd563be7a78]
+ 4: (ceph::__ceph_assert_fail(char const*, char const*, int, char const*)+0x199) [0x7fd567ffc374]
+ 5: (()+0x2534ed) [0x7fd567ffc4ed]
+ 6: (AuthMonitor::update_from_paxos(bool*)+0x1b0a) [0x5567c1b31f3a]
+ 7: (PaxosService::refresh(bool*)+0x103) [0x5567c1bc53a3]
+ 8: (Monitor::refresh_from_paxos(bool*)+0x194) [0x5567c1ab3514]
+ 9: (Monitor::init_paxos()+0xfc) [0x5567c1ab37ec]
+ 10: (Monitor::preinit()+0xa32) [0x5567c1ad2532]
+ 11: (main()+0x23e2) [0x5567c1a6bfc2]
+ 12: (__libc_start_main()+0xf5) [0x7fd563bd2555]
+ 13: (()+0x2332d0) [0x5567c1a9d2d0]
+debug 2020-11-19 05:47:31.812 7fd570d8a040 -1 *** Caught signal (Aborted) **
+ in thread 7fd570d8a040 thread_name:ceph-mon
+
+ ceph version 14.2.8 (2d095e947a02261ce61424021bb43bd3022d35cb) nautilus (stable)
+ 1: (()+0xf630) [0x7fd564df2630]
+ 2: (gsignal()+0x37) [0x7fd563be6387]
+ 3: (abort()+0x148) [0x7fd563be7a78]
+ 4: (ceph::__ceph_assert_fail(char const*, char const*, int, char const*)+0x199) [0x7fd567ffc374]
+ 5: (()+0x2534ed) [0x7fd567ffc4ed]
+ 6: (AuthMonitor::update_from_paxos(bool*)+0x1b0a) [0x5567c1b31f3a]
+ 7: (PaxosService::refresh(bool*)+0x103) [0x5567c1bc53a3]
+ 8: (Monitor::refresh_from_paxos(bool*)+0x194) [0x5567c1ab3514]
+ 9: (Monitor::init_paxos()+0xfc) [0x5567c1ab37ec]
+ 10: (Monitor::preinit()+0xa32) [0x5567c1ad2532]
+ 11: (main()+0x23e2) [0x5567c1a6bfc2]
+ 12: (__libc_start_main()+0xf5) [0x7fd563bd2555]
+ 13: (()+0x2332d0) [0x5567c1a9d2d0]
+ NOTE: a copy of the executable, or `objdump -rdS <executable>` is needed to interpret this.
+
+--- begin dump of recent events ---
+debug   -262> 2020-11-19 05:47:31.709 7fd570d8a040  5 asok(0x5567c4910000) register_command assert hook 0x5567c47881d0
+debug   -261> 2020-11-19 05:47:31.709 7fd570d8a040  5 asok(0x5567c4910000) register_command abort hook 0x5567c47881d0
+debug   -260> 2020-11-19 05:47:31.709 7fd570d8a040  5 asok(0x5567c4910000) register_command perfcounters_dump hook 0x5567c47881d0
+debug   -259> 2020-11-19 05:47:31.709 7fd570d8a040  5 asok(0x5567c4910000) register_command 1 hook 0x5567c47881d0
+debug   -258> 2020-11-19 05:47:31.709 7fd570d8a040  5 asok(0x5567c4910000) register_command perf dump hook 0x5567c47881d0
+debug   -257> 2020-11-19 05:47:31.709 7fd570d8a040  5 asok(0x5567c4910000) register_command perfcounters_schema hook 0x5567c47881d0
+debug   -256> 2020-11-19 05:47:31.709 7fd570d8a040  5 asok(0x5567c4910000) register_command perf histogram dump hook 0x5567c47881d0
+debug   -255> 2020-11-19 05:47:31.709 7fd570d8a040  5 asok(0x5567c4910000) register_command 2 hook 0x5567c47881d0
+debug   -254> 2020-11-19 05:47:31.709 7fd570d8a040  5 asok(0x5567c4910000) register_command perf schema hook 0x5567c47881d0
+debug   -253> 2020-11-19 05:47:31.709 7fd570d8a040  5 asok(0x5567c4910000) register_command perf histogram schema hook 0x5567c47881d0
+debug   -252> 2020-11-19 05:47:31.709 7fd570d8a040  5 asok(0x5567c4910000) register_command perf reset hook 0x5567c47881d0
+debug   -251> 2020-11-19 05:47:31.709 7fd570d8a040  5 asok(0x5567c4910000) register_command config show hook 0x5567c47881d0
+debug   -250> 2020-11-19 05:47:31.709 7fd570d8a040  5 asok(0x5567c4910000) register_command config help hook 0x5567c47881d0
+debug   -249> 2020-11-19 05:47:31.709 7fd570d8a040  5 asok(0x5567c4910000) register_command config set hook 0x5567c47881d0
+debug   -248> 2020-11-19 05:47:31.709 7fd570d8a040  5 asok(0x5567c4910000) register_command config unset hook 0x5567c47881d0
+debug   -247> 2020-11-19 05:47:31.709 7fd570d8a040  5 asok(0x5567c4910000) register_command config get hook 0x5567c47881d0
+debug   -246> 2020-11-19 05:47:31.709 7fd570d8a040  5 asok(0x5567c4910000) register_command config diff hook 0x5567c47881d0
+debug   -245> 2020-11-19 05:47:31.709 7fd570d8a040  5 asok(0x5567c4910000) register_command config diff get hook 0x5567c47881d0
+debug   -244> 2020-11-19 05:47:31.709 7fd570d8a040  5 asok(0x5567c4910000) register_command log flush hook 0x5567c47881d0
+debug   -243> 2020-11-19 05:47:31.709 7fd570d8a040  5 asok(0x5567c4910000) register_command log dump hook 0x5567c47881d0
+debug   -242> 2020-11-19 05:47:31.709 7fd570d8a040  5 asok(0x5567c4910000) register_command log reopen hook 0x5567c47881d0
+debug   -241> 2020-11-19 05:47:31.709 7fd570d8a040  5 asok(0x5567c4910000) register_command dump_mempools hook 0x5567c47c8548
+debug   -240> 2020-11-19 05:47:31.730 7fd570d8a040  0 setuser_match_path /var/lib/ceph/mon/ceph-b/store.db owned by 167:167. set uid:gid to 167:167 (ceph:ceph)
+debug   -239> 2020-11-19 05:47:31.730 7fd570d8a040  0 ceph version 14.2.8 (2d095e947a02261ce61424021bb43bd3022d35cb) nautilus (stable), process ceph-mon, pid 1
+debug   -238> 2020-11-19 05:47:31.730 7fd570d8a040  0 pidfile_write: ignore empty --pid-file
+debug   -237> 2020-11-19 05:47:31.768 7fd570d8a040  5 asok(0x5567c4910000) init /var/run/ceph/ceph-mon.b.asok
+debug   -236> 2020-11-19 05:47:31.768 7fd570d8a040  5 asok(0x5567c4910000) bind_and_listen /var/run/ceph/ceph-mon.b.asok
+debug   -235> 2020-11-19 05:47:31.768 7fd570d8a040  5 asok(0x5567c4910000) register_command 0 hook 0x5567c4786238
+debug   -234> 2020-11-19 05:47:31.768 7fd570d8a040  5 asok(0x5567c4910000) register_command version hook 0x5567c4786238
+debug   -233> 2020-11-19 05:47:31.768 7fd570d8a040  5 asok(0x5567c4910000) register_command git_version hook 0x5567c4786238
+debug   -232> 2020-11-19 05:47:31.768 7fd570d8a040  5 asok(0x5567c4910000) register_command help hook 0x5567c4788470
+debug   -231> 2020-11-19 05:47:31.768 7fd570d8a040  5 asok(0x5567c4910000) register_command get_command_descriptions hook 0x5567c4788480
+debug   -230> 2020-11-19 05:47:31.768 7fd5606b1700  5 asok(0x5567c4910000) entry start
+debug   -229> 2020-11-19 05:47:31.777 7fd570d8a040  0 load: jerasure load: lrc load: isa 
+debug   -228> 2020-11-19 05:47:31.778 7fd570d8a040  0  set rocksdb option compression = kNoCompression
+debug   -227> 2020-11-19 05:47:31.778 7fd570d8a040  0  set rocksdb option level_compaction_dynamic_level_bytes = true
+debug   -226> 2020-11-19 05:47:31.778 7fd570d8a040  0  set rocksdb option write_buffer_size = 33554432
+debug   -225> 2020-11-19 05:47:31.778 7fd570d8a040  0  set rocksdb option compression = kNoCompression
+debug   -224> 2020-11-19 05:47:31.778 7fd570d8a040  0  set rocksdb option level_compaction_dynamic_level_bytes = true
+debug   -223> 2020-11-19 05:47:31.778 7fd570d8a040  0  set rocksdb option write_buffer_size = 33554432
+debug   -222> 2020-11-19 05:47:31.778 7fd570d8a040  1 rocksdb: do_open column families: [default]
+debug   -221> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb: RocksDB version: 6.1.2
+
+debug   -220> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb: Git sha rocksdb_build_git_sha:@0@
+debug   -219> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb: Compile date Mar  2 2020
+debug   -218> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb: DB SUMMARY
+
+debug   -217> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb: CURRENT file:  CURRENT
+
+debug   -216> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb: IDENTITY file:  IDENTITY
+
+debug   -215> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb: MANIFEST file:  MANIFEST-362705 size: 184 Bytes
+
+debug   -214> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb: SST files in /var/lib/ceph/mon/ceph-b/store.db dir, Total Num: 2, files: 332267.sst 332269.sst 
+
+debug   -213> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb: Write Ahead Log file in /var/lib/ceph/mon/ceph-b/store.db: 362706.log size: 0 ; 
+
+debug   -212> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                         Options.error_if_exists: 0
+debug   -211> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                       Options.create_if_missing: 0
+debug   -210> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                         Options.paranoid_checks: 1
+debug   -209> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                                     Options.env: 0x5567c228d300
+debug   -208> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                                Options.info_log: 0x5567c53fe3e0
+debug   -207> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                Options.max_file_opening_threads: 16
+debug   -206> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                              Options.statistics: (nil)
+debug   -205> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                               Options.use_fsync: 0
+debug   -204> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                       Options.max_log_file_size: 0
+debug   -203> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                  Options.max_manifest_file_size: 1073741824
+debug   -202> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                   Options.log_file_time_to_roll: 0
+debug   -201> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                       Options.keep_log_file_num: 1000
+debug   -200> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                    Options.recycle_log_file_num: 0
+debug   -199> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                         Options.allow_fallocate: 1
+debug   -198> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                        Options.allow_mmap_reads: 0
+debug   -197> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                       Options.allow_mmap_writes: 0
+debug   -196> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                        Options.use_direct_reads: 0
+debug   -195> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                        Options.use_direct_io_for_flush_and_compaction: 0
+debug   -194> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:          Options.create_missing_column_families: 0
+debug   -193> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                              Options.db_log_dir: 
+debug   -192> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                                 Options.wal_dir: /var/lib/ceph/mon/ceph-b/store.db
+debug   -191> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                Options.table_cache_numshardbits: 6
+debug   -190> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                      Options.max_subcompactions: 1
+debug   -189> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                  Options.max_background_flushes: -1
+debug   -188> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                         Options.WAL_ttl_seconds: 0
+debug   -187> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                       Options.WAL_size_limit_MB: 0
+debug   -186> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:             Options.manifest_preallocation_size: 4194304
+debug   -185> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                     Options.is_fd_close_on_exec: 1
+debug   -184> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                   Options.advise_random_on_open: 1
+debug   -183> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                    Options.db_write_buffer_size: 0
+debug   -182> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                    Options.write_buffer_manager: 0x5567c54f0420
+debug   -181> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:         Options.access_hint_on_compaction_start: 1
+debug   -180> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:  Options.new_table_reader_for_compaction_inputs: 0
+debug   -179> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:           Options.random_access_max_buffer_size: 1048576
+debug   -178> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                      Options.use_adaptive_mutex: 0
+debug   -177> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                            Options.rate_limiter: (nil)
+debug   -176> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:     Options.sst_file_manager.rate_bytes_per_sec: 0
+debug   -175> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                       Options.wal_recovery_mode: 2
+debug   -174> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                  Options.enable_thread_tracking: 0
+debug   -173> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                  Options.enable_pipelined_write: 0
+debug   -172> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:         Options.allow_concurrent_memtable_write: 1
+debug   -171> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:      Options.enable_write_thread_adaptive_yield: 1
+debug   -170> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:             Options.write_thread_max_yield_usec: 100
+debug   -169> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:            Options.write_thread_slow_yield_usec: 3
+debug   -168> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                               Options.row_cache: None
+debug   -167> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                              Options.wal_filter: None
+debug   -166> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:             Options.avoid_flush_during_recovery: 0
+debug   -165> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:             Options.allow_ingest_behind: 0
+debug   -164> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:             Options.preserve_deletes: 0
+debug   -163> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:             Options.two_write_queues: 0
+debug   -162> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:             Options.manual_wal_flush: 0
+debug   -161> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:             Options.atomic_flush: 0
+debug   -160> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:             Options.avoid_unnecessary_blocking_io: 0
+debug   -159> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:             Options.max_background_jobs: 2
+debug   -158> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:             Options.max_background_compactions: -1
+debug   -157> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:             Options.avoid_flush_during_shutdown: 0
+debug   -156> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:           Options.writable_file_max_buffer_size: 1048576
+debug   -155> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:             Options.delayed_write_rate : 16777216
+debug   -154> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:             Options.max_total_wal_size: 0
+debug   -153> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:             Options.delete_obsolete_files_period_micros: 21600000000
+debug   -152> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                   Options.stats_dump_period_sec: 600
+debug   -151> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                 Options.stats_persist_period_sec: 600
+debug   -150> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                 Options.stats_history_buffer_size: 1048576
+debug   -149> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                          Options.max_open_files: -1
+debug   -148> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                          Options.bytes_per_sync: 0
+debug   -147> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                      Options.wal_bytes_per_sync: 0
+debug   -146> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:       Options.compaction_readahead_size: 0
+debug   -145> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb: Compression algorithms supported:
+debug   -144> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb: 	kZSTDNotFinalCompression supported: 0
+debug   -143> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb: 	kZSTD supported: 0
+debug   -142> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb: 	kXpressCompression supported: 0
+debug   -141> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb: 	kLZ4HCCompression supported: 1
+debug   -140> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb: 	kLZ4Compression supported: 1
+debug   -139> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb: 	kBZip2Compression supported: 0
+debug   -138> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb: 	kZlibCompression supported: 1
+debug   -137> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb: 	kSnappyCompression supported: 1
+debug   -136> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb: Fast CRC32 supported: Supported on x86
+debug   -135> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb: [db/version_set.cc:3543] Recovering from manifest file: /var/lib/ceph/mon/ceph-b/store.db/MANIFEST-362705
+
+debug   -134> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb: [db/column_family.cc:477] --------------- Options for column family [default]:
+
+debug   -133> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:               Options.comparator: leveldb.BytewiseComparator
+debug   -132> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:           Options.merge_operator: 
+debug   -131> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:        Options.compaction_filter: None
+debug   -130> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:        Options.compaction_filter_factory: None
+debug   -129> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:         Options.memtable_factory: SkipListFactory
+debug   -128> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:            Options.table_factory: BlockBasedTable
+debug   -127> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:            table_factory options:   flush_block_policy_factory: FlushBlockBySizePolicyFactory (0x5567c4786248)
+  cache_index_and_filter_blocks: 1
+  cache_index_and_filter_blocks_with_high_priority: 1
+  pin_l0_filter_and_index_blocks_in_cache: 0
+  pin_top_level_index_and_filter: 1
+  index_type: 0
+  data_block_index_type: 0
+  data_block_hash_table_util_ratio: 0.750000
+  hash_index_allow_collision: 1
+  checksum: 1
+  no_block_cache: 0
+  block_cache: 0x5567c47a2f10
+  block_cache_name: BinnedLRUCache
+  block_cache_options:
+    capacity : 536870912
+    num_shard_bits : 4
+    strict_capacity_limit : 0
+    high_pri_pool_ratio: 0.000
+  block_cache_compressed: (nil)
+  persistent_cache: (nil)
+  block_size: 4096
+  block_size_deviation: 10
+  block_restart_interval: 16
+  index_block_restart_interval: 1
+  metadata_block_size: 4096
+  partition_filters: 0
+  use_delta_encoding: 1
+  filter_policy: rocksdb.BuiltinBloomFilter
+  whole_key_filtering: 1
+  verify_compression: 0
+  read_amp_bytes_per_bit: 0
+  format_version: 2
+  enable_index_compression: 1
+  block_align: 0
+
+debug   -126> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:        Options.write_buffer_size: 33554432
+debug   -125> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:  Options.max_write_buffer_number: 2
+debug   -124> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:          Options.compression: NoCompression
+debug   -123> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:                  Options.bottommost_compression: Disabled
+debug   -122> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:       Options.prefix_extractor: nullptr
+debug   -121> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:   Options.memtable_insert_with_hint_prefix_extractor: nullptr
+debug   -120> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:             Options.num_levels: 7
+debug   -119> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:        Options.min_write_buffer_number_to_merge: 1
+debug   -118> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:     Options.max_write_buffer_number_to_maintain: 0
+debug   -117> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:            Options.bottommost_compression_opts.window_bits: -14
+debug   -116> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:                  Options.bottommost_compression_opts.level: 32767
+debug   -115> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:               Options.bottommost_compression_opts.strategy: 0
+debug   -114> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:         Options.bottommost_compression_opts.max_dict_bytes: 0
+debug   -113> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:         Options.bottommost_compression_opts.zstd_max_train_bytes: 0
+debug   -112> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:                  Options.bottommost_compression_opts.enabled: false
+debug   -111> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:            Options.compression_opts.window_bits: -14
+debug   -110> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:                  Options.compression_opts.level: 32767
+debug   -109> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:               Options.compression_opts.strategy: 0
+debug   -108> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:         Options.compression_opts.max_dict_bytes: 0
+debug   -107> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:         Options.compression_opts.zstd_max_train_bytes: 0
+debug   -106> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:                  Options.compression_opts.enabled: false
+debug   -105> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:      Options.level0_file_num_compaction_trigger: 4
+debug   -104> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:          Options.level0_slowdown_writes_trigger: 20
+debug   -103> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:              Options.level0_stop_writes_trigger: 36
+debug   -102> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:                   Options.target_file_size_base: 67108864
+debug   -101> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:             Options.target_file_size_multiplier: 1
+debug   -100> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:                Options.max_bytes_for_level_base: 268435456
+debug    -99> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb: Options.level_compaction_dynamic_level_bytes: 1
+debug    -98> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:          Options.max_bytes_for_level_multiplier: 10.000000
+debug    -97> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb: Options.max_bytes_for_level_multiplier_addtl[0]: 1
+debug    -96> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb: Options.max_bytes_for_level_multiplier_addtl[1]: 1
+debug    -95> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb: Options.max_bytes_for_level_multiplier_addtl[2]: 1
+debug    -94> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb: Options.max_bytes_for_level_multiplier_addtl[3]: 1
+debug    -93> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb: Options.max_bytes_for_level_multiplier_addtl[4]: 1
+debug    -92> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb: Options.max_bytes_for_level_multiplier_addtl[5]: 1
+debug    -91> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb: Options.max_bytes_for_level_multiplier_addtl[6]: 1
+debug    -90> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:       Options.max_sequential_skip_in_iterations: 8
+debug    -89> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:                    Options.max_compaction_bytes: 1677721600
+debug    -88> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:                        Options.arena_block_size: 4194304
+debug    -87> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:   Options.soft_pending_compaction_bytes_limit: 68719476736
+debug    -86> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:   Options.hard_pending_compaction_bytes_limit: 274877906944
+debug    -85> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:       Options.rate_limit_delay_max_milliseconds: 100
+debug    -84> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:                Options.disable_auto_compactions: 0
+debug    -83> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:                        Options.compaction_style: kCompactionStyleLevel
+debug    -82> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:                          Options.compaction_pri: kMinOverlappingRatio
+debug    -81> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb: Options.compaction_options_universal.size_ratio: 1
+debug    -80> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb: Options.compaction_options_universal.min_merge_width: 2
+debug    -79> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb: Options.compaction_options_universal.max_merge_width: 4294967295
+debug    -78> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb: Options.compaction_options_universal.max_size_amplification_percent: 200
+debug    -77> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb: Options.compaction_options_universal.compression_size_percent: -1
+debug    -76> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb: Options.compaction_options_universal.stop_style: kCompactionStopStyleTotalSize
+debug    -75> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb: Options.compaction_options_fifo.max_table_files_size: 1073741824
+debug    -74> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb: Options.compaction_options_fifo.allow_compaction: 0
+debug    -73> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:                   Options.table_properties_collectors: 
+debug    -72> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:                   Options.inplace_update_support: 0
+debug    -71> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:                 Options.inplace_update_num_locks: 10000
+debug    -70> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:               Options.memtable_prefix_bloom_size_ratio: 0.000000
+debug    -69> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:               Options.memtable_whole_key_filtering: 0
+debug    -68> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:   Options.memtable_huge_page_size: 0
+debug    -67> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:                           Options.bloom_locality: 0
+debug    -66> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:                    Options.max_successive_merges: 0
+debug    -65> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:                Options.optimize_filters_for_hits: 0
+debug    -64> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:                Options.paranoid_file_checks: 0
+debug    -63> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:                Options.force_consistency_checks: 0
+debug    -62> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:                Options.report_bg_io_stats: 0
+debug    -61> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:                               Options.ttl: 0
+debug    -60> 2020-11-19 05:47:31.792 7fd570d8a040  3 rocksdb: [db/version_set.cc:2581] More existing levels in DB than needed. max_bytes_for_level_multiplier may not be guaranteed.
+debug    -59> 2020-11-19 05:47:31.792 7fd570d8a040  4 rocksdb: [db/version_set.cc:3757] Recovered from manifest file:/var/lib/ceph/mon/ceph-b/store.db/MANIFEST-362705 succeeded,manifest_file_number is 362705, next_file_number is 362707, last_sequence is 149449722, log_number is 362704,prev_log_number is 0,max_column_family is 0,min_log_number_to_keep is 0
+
+debug    -58> 2020-11-19 05:47:31.792 7fd570d8a040  4 rocksdb: [db/version_set.cc:3766] Column family [default] (ID 0), log number is 362704
+
+debug    -57> 2020-11-19 05:47:31.792 7fd570d8a040  4 rocksdb: EVENT_LOG_v1 {"time_micros": 1605764851793410, "job": 1, "event": "recovery_started", "log_files": [362706]}
+debug    -56> 2020-11-19 05:47:31.792 7fd570d8a040  4 rocksdb: [db/db_impl_open.cc:583] Recovering log #362706 mode 2
+debug    -55> 2020-11-19 05:47:31.792 7fd570d8a040  4 rocksdb: [db/version_set.cc:3036] Creating manifest 362708
+
+debug    -54> 2020-11-19 05:47:31.793 7fd570d8a040  3 rocksdb: [db/version_set.cc:2581] More existing levels in DB than needed. max_bytes_for_level_multiplier may not be guaranteed.
+debug    -53> 2020-11-19 05:47:31.794 7fd570d8a040  4 rocksdb: EVENT_LOG_v1 {"time_micros": 1605764851795506, "job": 1, "event": "recovery_finished"}
+debug    -52> 2020-11-19 05:47:31.797 7fd570d8a040  4 rocksdb: DB pointer 0x5567c53cf200
+debug    -51> 2020-11-19 05:47:31.798 7fd55661e700  4 rocksdb: [db/db_impl.cc:777] ------- DUMPING STATS -------
+debug    -50> 2020-11-19 05:47:31.798 7fd55661e700  4 rocksdb: [db/db_impl.cc:778] 
+** DB Stats **
+Uptime(secs): 0.0 total, 0.0 interval
+Cumulative writes: 0 writes, 0 keys, 0 commit groups, 0.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 0 writes, 0 syncs, 0.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 0 writes, 0 keys, 0 commit groups, 0.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 0 writes, 0 syncs, 0.00 writes per sync, written: 0.00 MB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+
+** Compaction Stats [default] **
+Level    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  L0      1/0   180.75 KB   0.2      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0
+  L6      1/0   23.80 MB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0
+ Sum      2/0   23.98 MB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0
+ Int      0/0    0.00 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0
+
+** Compaction Stats [default] **
+Priority    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Uptime(secs): 0.0 total, 0.0 interval
+Flush(GB): cumulative 0.000, interval 0.000
+AddFile(GB): cumulative 0.000, interval 0.000
+AddFile(Total Files): cumulative 0, interval 0
+AddFile(L0 Files): cumulative 0, interval 0
+AddFile(Keys): cumulative 0, interval 0
+Cumulative compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
+Interval compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
+Stalls(count): 0 level0_slowdown, 0 level0_slowdown_with_compaction, 0 level0_numfiles, 0 level0_numfiles_with_compaction, 0 stop for pending_compaction_bytes, 0 slowdown for pending_compaction_bytes, 0 memtable_compaction, 0 memtable_slowdown, interval 0 total count
+
+** File Read Latency Histogram By Level [default] **
+
+** Compaction Stats [default] **
+Level    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  L0      1/0   180.75 KB   0.2      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0
+  L6      1/0   23.80 MB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0
+ Sum      2/0   23.98 MB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0
+ Int      0/0    0.00 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0
+
+** Compaction Stats [default] **
+Priority    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Uptime(secs): 0.0 total, 0.0 interval
+Flush(GB): cumulative 0.000, interval 0.000
+AddFile(GB): cumulative 0.000, interval 0.000
+AddFile(Total Files): cumulative 0, interval 0
+AddFile(L0 Files): cumulative 0, interval 0
+AddFile(Keys): cumulative 0, interval 0
+Cumulative compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
+Interval compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
+Stalls(count): 0 level0_slowdown, 0 level0_slowdown_with_compaction, 0 level0_numfiles, 0 level0_numfiles_with_compaction, 0 stop for pending_compaction_bytes, 0 slowdown for pending_compaction_bytes, 0 memtable_compaction, 0 memtable_slowdown, interval 0 total count
+
+** File Read Latency Histogram By Level [default] **
+
+debug    -49> 2020-11-19 05:47:31.798 7fd570d8a040  5 AuthRegistry(0x5567c4815338) adding auth protocol: cephx
+debug    -48> 2020-11-19 05:47:31.798 7fd570d8a040  5 AuthRegistry(0x5567c4815338) adding auth protocol: cephx
+debug    -47> 2020-11-19 05:47:31.798 7fd570d8a040  5 AuthRegistry(0x5567c4815338) adding auth protocol: cephx
+debug    -46> 2020-11-19 05:47:31.798 7fd570d8a040  5 AuthRegistry(0x5567c4815338) adding auth protocol: none
+debug    -45> 2020-11-19 05:47:31.798 7fd570d8a040  5 AuthRegistry(0x5567c4815338) adding con mode: secure
+debug    -44> 2020-11-19 05:47:31.798 7fd570d8a040  5 AuthRegistry(0x5567c4815338) adding con mode: crc
+debug    -43> 2020-11-19 05:47:31.798 7fd570d8a040  5 AuthRegistry(0x5567c4815338) adding con mode: secure
+debug    -42> 2020-11-19 05:47:31.798 7fd570d8a040  5 AuthRegistry(0x5567c4815338) adding con mode: crc
+debug    -41> 2020-11-19 05:47:31.798 7fd570d8a040  5 AuthRegistry(0x5567c4815338) adding con mode: secure
+debug    -40> 2020-11-19 05:47:31.798 7fd570d8a040  5 AuthRegistry(0x5567c4815338) adding con mode: crc
+debug    -39> 2020-11-19 05:47:31.798 7fd570d8a040  5 AuthRegistry(0x5567c4815338) adding con mode: crc
+debug    -38> 2020-11-19 05:47:31.798 7fd570d8a040  5 AuthRegistry(0x5567c4815338) adding con mode: secure
+debug    -37> 2020-11-19 05:47:31.798 7fd570d8a040  5 AuthRegistry(0x5567c4815338) adding con mode: crc
+debug    -36> 2020-11-19 05:47:31.798 7fd570d8a040  5 AuthRegistry(0x5567c4815338) adding con mode: secure
+debug    -35> 2020-11-19 05:47:31.798 7fd570d8a040  5 AuthRegistry(0x5567c4815338) adding con mode: crc
+debug    -34> 2020-11-19 05:47:31.798 7fd570d8a040  5 AuthRegistry(0x5567c4815338) adding con mode: secure
+debug    -33> 2020-11-19 05:47:31.799 7fd570d8a040  2 auth: KeyRing::load: loaded key file /etc/ceph/keyring-store/keyring
+debug    -32> 2020-11-19 05:47:31.801 7fd570d8a040  0 starting mon.b rank 0 at public addrs [v2:10.104.200.156:3300/0,v1:10.104.200.156:6789/0] at bind addrs [v2:10.244.194.133:3300/0,v1:10.244.194.133:6789/0] mon_data /var/lib/ceph/mon/ceph-b fsid dedb80df-d16c-4a90-912e-a833a97c3f52
+debug    -31> 2020-11-19 05:47:31.801 7fd570d8a040  5 AuthRegistry(0x5567c4814a38) adding auth protocol: cephx
+debug    -30> 2020-11-19 05:47:31.801 7fd570d8a040  5 AuthRegistry(0x5567c4814a38) adding auth protocol: cephx
+debug    -29> 2020-11-19 05:47:31.801 7fd570d8a040  5 AuthRegistry(0x5567c4814a38) adding auth protocol: cephx
+debug    -28> 2020-11-19 05:47:31.801 7fd570d8a040  5 AuthRegistry(0x5567c4814a38) adding auth protocol: none
+debug    -27> 2020-11-19 05:47:31.801 7fd570d8a040  5 AuthRegistry(0x5567c4814a38) adding con mode: secure
+debug    -26> 2020-11-19 05:47:31.801 7fd570d8a040  5 AuthRegistry(0x5567c4814a38) adding con mode: crc
+debug    -25> 2020-11-19 05:47:31.801 7fd570d8a040  5 AuthRegistry(0x5567c4814a38) adding con mode: secure
+debug    -24> 2020-11-19 05:47:31.801 7fd570d8a040  5 AuthRegistry(0x5567c4814a38) adding con mode: crc
+debug    -23> 2020-11-19 05:47:31.801 7fd570d8a040  5 AuthRegistry(0x5567c4814a38) adding con mode: secure
+debug    -22> 2020-11-19 05:47:31.801 7fd570d8a040  5 AuthRegistry(0x5567c4814a38) adding con mode: crc
+debug    -21> 2020-11-19 05:47:31.801 7fd570d8a040  5 AuthRegistry(0x5567c4814a38) adding con mode: crc
+debug    -20> 2020-11-19 05:47:31.801 7fd570d8a040  5 AuthRegistry(0x5567c4814a38) adding con mode: secure
+debug    -19> 2020-11-19 05:47:31.801 7fd570d8a040  5 AuthRegistry(0x5567c4814a38) adding con mode: crc
+debug    -18> 2020-11-19 05:47:31.801 7fd570d8a040  5 AuthRegistry(0x5567c4814a38) adding con mode: secure
+debug    -17> 2020-11-19 05:47:31.801 7fd570d8a040  5 AuthRegistry(0x5567c4814a38) adding con mode: crc
+debug    -16> 2020-11-19 05:47:31.801 7fd570d8a040  5 AuthRegistry(0x5567c4814a38) adding con mode: secure
+debug    -15> 2020-11-19 05:47:31.801 7fd570d8a040  2 auth: KeyRing::load: loaded key file /etc/ceph/keyring-store/keyring
+debug    -14> 2020-11-19 05:47:31.801 7fd570d8a040  5 adding auth protocol: cephx
+debug    -13> 2020-11-19 05:47:31.801 7fd570d8a040  5 adding auth protocol: cephx
+debug    -12> 2020-11-19 05:47:31.801 7fd570d8a040 10 log_channel(cluster) update_config to_monitors: true to_syslog: false syslog_facility: daemon prio: info to_graylog: false graylog_host: 127.0.0.1 graylog_port: 12201)
+debug    -11> 2020-11-19 05:47:31.801 7fd570d8a040 10 log_channel(audit) update_config to_monitors: true to_syslog: false syslog_facility: local0 prio: info to_graylog: false graylog_host: 127.0.0.1 graylog_port: 12201)
+debug    -10> 2020-11-19 05:47:31.805 7fd570d8a040  1 mon.b@-1(???) e7 preinit fsid dedb80df-d16c-4a90-912e-a833a97c3f52
+debug     -9> 2020-11-19 05:47:31.806 7fd570d8a040  5 mon.b@-1(???).mds e0 Unable to load 'last_metadata'
+debug     -8> 2020-11-19 05:47:31.806 7fd570d8a040  0 mon.b@-1(???).mds e1 new map
+debug     -7> 2020-11-19 05:47:31.806 7fd570d8a040  0 mon.b@-1(???).mds e1 print_map
+e1
+enable_multiple, ever_enabled_multiple: 0,0
+compat: compat={},rocompat={},incompat={1=base v0.20,2=client writeable ranges,3=default file layouts on dirs,4=dir inode in separate object,5=mds uses versioned encoding,6=dirfrag is stored in omap,8=no anchor table,9=file layout v2,10=snaprealm v2}
+legacy client fscid: -1
+ 
+No filesystems configured
+
+debug     -6> 2020-11-19 05:47:31.806 7fd570d8a040  0 mon.b@-1(???).osd e151 crush map has features 288514051259236352, adjusting msgr requires
+debug     -5> 2020-11-19 05:47:31.806 7fd570d8a040  0 mon.b@-1(???).osd e151 crush map has features 288514051259236352, adjusting msgr requires
+debug     -4> 2020-11-19 05:47:31.806 7fd570d8a040  0 mon.b@-1(???).osd e151 crush map has features 3314933000852226048, adjusting msgr requires
+debug     -3> 2020-11-19 05:47:31.806 7fd570d8a040  0 mon.b@-1(???).osd e151 crush map has features 288514051259236352, adjusting msgr requires
+debug     -2> 2020-11-19 05:47:31.807 7fd570d8a040  1 mon.b@-1(???).paxosservice(auth 4251..4503) refresh upgraded, format 0 -> 3
+debug     -1> 2020-11-19 05:47:31.809 7fd570d8a040 -1 /home/jenkins-build/build/workspace/ceph-build/ARCH/x86_64/AVAILABLE_ARCH/x86_64/AVAILABLE_DIST/centos7/DIST/centos7/MACHINE_SIZE/huge/release/14.2.8/rpm/el7/BUILD/ceph-14.2.8/src/mon/AuthMonitor.cc: In function 'virtual void AuthMonitor::update_from_paxos(bool*)' thread 7fd570d8a040 time 2020-11-19 05:47:31.809152
+/home/jenkins-build/build/workspace/ceph-build/ARCH/x86_64/AVAILABLE_ARCH/x86_64/AVAILABLE_DIST/centos7/DIST/centos7/MACHINE_SIZE/huge/release/14.2.8/rpm/el7/BUILD/ceph-14.2.8/src/mon/AuthMonitor.cc: 278: FAILED ceph_assert(ret == 0)
+
+ ceph version 14.2.8 (2d095e947a02261ce61424021bb43bd3022d35cb) nautilus (stable)
+ 1: (ceph::__ceph_assert_fail(char const*, char const*, int, char const*)+0x14a) [0x7fd567ffc325]
+ 2: (()+0x2534ed) [0x7fd567ffc4ed]
+ 3: (AuthMonitor::update_from_paxos(bool*)+0x1b0a) [0x5567c1b31f3a]
+ 4: (PaxosService::refresh(bool*)+0x103) [0x5567c1bc53a3]
+ 5: (Monitor::refresh_from_paxos(bool*)+0x194) [0x5567c1ab3514]
+ 6: (Monitor::init_paxos()+0xfc) [0x5567c1ab37ec]
+ 7: (Monitor::preinit()+0xa32) [0x5567c1ad2532]
+ 8: (main()+0x23e2) [0x5567c1a6bfc2]
+ 9: (__libc_start_main()+0xf5) [0x7fd563bd2555]
+ 10: (()+0x2332d0) [0x5567c1a9d2d0]
+
+debug      0> 2020-11-19 05:47:31.812 7fd570d8a040 -1 *** Caught signal (Aborted) **
+ in thread 7fd570d8a040 thread_name:ceph-mon
+
+ ceph version 14.2.8 (2d095e947a02261ce61424021bb43bd3022d35cb) nautilus (stable)
+ 1: (()+0xf630) [0x7fd564df2630]
+ 2: (gsignal()+0x37) [0x7fd563be6387]
+ 3: (abort()+0x148) [0x7fd563be7a78]
+ 4: (ceph::__ceph_assert_fail(char const*, char const*, int, char const*)+0x199) [0x7fd567ffc374]
+ 5: (()+0x2534ed) [0x7fd567ffc4ed]
+ 6: (AuthMonitor::update_from_paxos(bool*)+0x1b0a) [0x5567c1b31f3a]
+ 7: (PaxosService::refresh(bool*)+0x103) [0x5567c1bc53a3]
+ 8: (Monitor::refresh_from_paxos(bool*)+0x194) [0x5567c1ab3514]
+ 9: (Monitor::init_paxos()+0xfc) [0x5567c1ab37ec]
+ 10: (Monitor::preinit()+0xa32) [0x5567c1ad2532]
+ 11: (main()+0x23e2) [0x5567c1a6bfc2]
+ 12: (__libc_start_main()+0xf5) [0x7fd563bd2555]
+ 13: (()+0x2332d0) [0x5567c1a9d2d0]
+ NOTE: a copy of the executable, or `objdump -rdS <executable>` is needed to interpret this.
+
+--- logging levels ---
+   0/ 5 none
+   0/ 1 lockdep
+   0/ 1 context
+   1/ 1 crush
+   1/ 5 mds
+   1/ 5 mds_balancer
+   1/ 5 mds_locker
+   1/ 5 mds_log
+   1/ 5 mds_log_expire
+   1/ 5 mds_migrator
+   0/ 1 buffer
+   0/ 1 timer
+   0/ 1 filer
+   0/ 1 striper
+   0/ 1 objecter
+   0/ 5 rados
+   0/ 5 rbd
+   0/ 5 rbd_mirror
+   0/ 5 rbd_replay
+   0/ 5 journaler
+   0/ 5 objectcacher
+   0/ 5 client
+   1/ 5 osd
+   0/ 5 optracker
+   0/ 5 objclass
+   1/ 3 filestore
+   1/ 3 journal
+   0/ 0 ms
+   1/ 5 mon
+   0/10 monc
+   1/ 5 paxos
+   0/ 5 tp
+   1/ 5 auth
+   1/ 5 crypto
+   1/ 1 finisher
+   1/ 1 reserver
+   1/ 5 heartbeatmap
+   1/ 5 perfcounter
+   1/ 5 rgw
+   1/ 5 rgw_sync
+   1/10 civetweb
+   1/ 5 javaclient
+   1/ 5 asok
+   1/ 1 throttle
+   0/ 0 refs
+   1/ 5 xio
+   1/ 5 compressor
+   1/ 5 bluestore
+   1/ 5 bluefs
+   1/ 3 bdev
+   1/ 5 kstore
+   4/ 5 rocksdb
+   4/ 5 leveldb
+   4/ 5 memdb
+   1/ 5 kinetic
+   1/ 5 fuse
+   1/ 5 mgr
+   1/ 5 mgrc
+   1/ 5 dpdk
+   1/ 5 eventtrace
+   1/ 5 prioritycache
+  -2/-2 (syslog threshold)
+  99/99 (stderr threshold)
+  max_recent     10000
+  max_new         1000
+  log_file 
+--- end dump of recent events ---
+--- begin dump of recent events ---
+debug   -262> 2020-11-19 05:47:31.709 7fd570d8a040  5 asok(0x5567c4910000) register_command assert hook 0x5567c47881d0
+debug   -261> 2020-11-19 05:47:31.709 7fd570d8a040  5 asok(0x5567c4910000) register_command abort hook 0x5567c47881d0
+debug   -260> 2020-11-19 05:47:31.709 7fd570d8a040  5 asok(0x5567c4910000) register_command perfcounters_dump hook 0x5567c47881d0
+debug   -259> 2020-11-19 05:47:31.709 7fd570d8a040  5 asok(0x5567c4910000) register_command 1 hook 0x5567c47881d0
+debug   -258> 2020-11-19 05:47:31.709 7fd570d8a040  5 asok(0x5567c4910000) register_command perf dump hook 0x5567c47881d0
+debug   -257> 2020-11-19 05:47:31.709 7fd570d8a040  5 asok(0x5567c4910000) register_command perfcounters_schema hook 0x5567c47881d0
+debug   -256> 2020-11-19 05:47:31.709 7fd570d8a040  5 asok(0x5567c4910000) register_command perf histogram dump hook 0x5567c47881d0
+debug   -255> 2020-11-19 05:47:31.709 7fd570d8a040  5 asok(0x5567c4910000) register_command 2 hook 0x5567c47881d0
+debug   -254> 2020-11-19 05:47:31.709 7fd570d8a040  5 asok(0x5567c4910000) register_command perf schema hook 0x5567c47881d0
+debug   -253> 2020-11-19 05:47:31.709 7fd570d8a040  5 asok(0x5567c4910000) register_command perf histogram schema hook 0x5567c47881d0
+debug   -252> 2020-11-19 05:47:31.709 7fd570d8a040  5 asok(0x5567c4910000) register_command perf reset hook 0x5567c47881d0
+debug   -251> 2020-11-19 05:47:31.709 7fd570d8a040  5 asok(0x5567c4910000) register_command config show hook 0x5567c47881d0
+debug   -250> 2020-11-19 05:47:31.709 7fd570d8a040  5 asok(0x5567c4910000) register_command config help hook 0x5567c47881d0
+debug   -249> 2020-11-19 05:47:31.709 7fd570d8a040  5 asok(0x5567c4910000) register_command config set hook 0x5567c47881d0
+debug   -248> 2020-11-19 05:47:31.709 7fd570d8a040  5 asok(0x5567c4910000) register_command config unset hook 0x5567c47881d0
+debug   -247> 2020-11-19 05:47:31.709 7fd570d8a040  5 asok(0x5567c4910000) register_command config get hook 0x5567c47881d0
+debug   -246> 2020-11-19 05:47:31.709 7fd570d8a040  5 asok(0x5567c4910000) register_command config diff hook 0x5567c47881d0
+debug   -245> 2020-11-19 05:47:31.709 7fd570d8a040  5 asok(0x5567c4910000) register_command config diff get hook 0x5567c47881d0
+debug   -244> 2020-11-19 05:47:31.709 7fd570d8a040  5 asok(0x5567c4910000) register_command log flush hook 0x5567c47881d0
+debug   -243> 2020-11-19 05:47:31.709 7fd570d8a040  5 asok(0x5567c4910000) register_command log dump hook 0x5567c47881d0
+debug   -242> 2020-11-19 05:47:31.709 7fd570d8a040  5 asok(0x5567c4910000) register_command log reopen hook 0x5567c47881d0
+debug   -241> 2020-11-19 05:47:31.709 7fd570d8a040  5 asok(0x5567c4910000) register_command dump_mempools hook 0x5567c47c8548
+debug   -240> 2020-11-19 05:47:31.730 7fd570d8a040  0 setuser_match_path /var/lib/ceph/mon/ceph-b/store.db owned by 167:167. set uid:gid to 167:167 (ceph:ceph)
+debug   -239> 2020-11-19 05:47:31.730 7fd570d8a040  0 ceph version 14.2.8 (2d095e947a02261ce61424021bb43bd3022d35cb) nautilus (stable), process ceph-mon, pid 1
+debug   -238> 2020-11-19 05:47:31.730 7fd570d8a040  0 pidfile_write: ignore empty --pid-file
+debug   -237> 2020-11-19 05:47:31.768 7fd570d8a040  5 asok(0x5567c4910000) init /var/run/ceph/ceph-mon.b.asok
+debug   -236> 2020-11-19 05:47:31.768 7fd570d8a040  5 asok(0x5567c4910000) bind_and_listen /var/run/ceph/ceph-mon.b.asok
+debug   -235> 2020-11-19 05:47:31.768 7fd570d8a040  5 asok(0x5567c4910000) register_command 0 hook 0x5567c4786238
+debug   -234> 2020-11-19 05:47:31.768 7fd570d8a040  5 asok(0x5567c4910000) register_command version hook 0x5567c4786238
+debug   -233> 2020-11-19 05:47:31.768 7fd570d8a040  5 asok(0x5567c4910000) register_command git_version hook 0x5567c4786238
+debug   -232> 2020-11-19 05:47:31.768 7fd570d8a040  5 asok(0x5567c4910000) register_command help hook 0x5567c4788470
+debug   -231> 2020-11-19 05:47:31.768 7fd570d8a040  5 asok(0x5567c4910000) register_command get_command_descriptions hook 0x5567c4788480
+debug   -230> 2020-11-19 05:47:31.768 7fd5606b1700  5 asok(0x5567c4910000) entry start
+debug   -229> 2020-11-19 05:47:31.777 7fd570d8a040  0 load: jerasure load: lrc load: isa 
+debug   -228> 2020-11-19 05:47:31.778 7fd570d8a040  0  set rocksdb option compression = kNoCompression
+debug   -227> 2020-11-19 05:47:31.778 7fd570d8a040  0  set rocksdb option level_compaction_dynamic_level_bytes = true
+debug   -226> 2020-11-19 05:47:31.778 7fd570d8a040  0  set rocksdb option write_buffer_size = 33554432
+debug   -225> 2020-11-19 05:47:31.778 7fd570d8a040  0  set rocksdb option compression = kNoCompression
+debug   -224> 2020-11-19 05:47:31.778 7fd570d8a040  0  set rocksdb option level_compaction_dynamic_level_bytes = true
+debug   -223> 2020-11-19 05:47:31.778 7fd570d8a040  0  set rocksdb option write_buffer_size = 33554432
+debug   -222> 2020-11-19 05:47:31.778 7fd570d8a040  1 rocksdb: do_open column families: [default]
+debug   -221> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb: RocksDB version: 6.1.2
+
+debug   -220> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb: Git sha rocksdb_build_git_sha:@0@
+debug   -219> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb: Compile date Mar  2 2020
+debug   -218> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb: DB SUMMARY
+
+debug   -217> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb: CURRENT file:  CURRENT
+
+debug   -216> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb: IDENTITY file:  IDENTITY
+
+debug   -215> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb: MANIFEST file:  MANIFEST-362705 size: 184 Bytes
+
+debug   -214> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb: SST files in /var/lib/ceph/mon/ceph-b/store.db dir, Total Num: 2, files: 332267.sst 332269.sst 
+
+debug   -213> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb: Write Ahead Log file in /var/lib/ceph/mon/ceph-b/store.db: 362706.log size: 0 ; 
+
+debug   -212> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                         Options.error_if_exists: 0
+debug   -211> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                       Options.create_if_missing: 0
+debug   -210> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                         Options.paranoid_checks: 1
+debug   -209> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                                     Options.env: 0x5567c228d300
+debug   -208> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                                Options.info_log: 0x5567c53fe3e0
+debug   -207> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                Options.max_file_opening_threads: 16
+debug   -206> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                              Options.statistics: (nil)
+debug   -205> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                               Options.use_fsync: 0
+debug   -204> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                       Options.max_log_file_size: 0
+debug   -203> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                  Options.max_manifest_file_size: 1073741824
+debug   -202> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                   Options.log_file_time_to_roll: 0
+debug   -201> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                       Options.keep_log_file_num: 1000
+debug   -200> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                    Options.recycle_log_file_num: 0
+debug   -199> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                         Options.allow_fallocate: 1
+debug   -198> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                        Options.allow_mmap_reads: 0
+debug   -197> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                       Options.allow_mmap_writes: 0
+debug   -196> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                        Options.use_direct_reads: 0
+debug   -195> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                        Options.use_direct_io_for_flush_and_compaction: 0
+debug   -194> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:          Options.create_missing_column_families: 0
+debug   -193> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                              Options.db_log_dir: 
+debug   -192> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                                 Options.wal_dir: /var/lib/ceph/mon/ceph-b/store.db
+debug   -191> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                Options.table_cache_numshardbits: 6
+debug   -190> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                      Options.max_subcompactions: 1
+debug   -189> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                  Options.max_background_flushes: -1
+debug   -188> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                         Options.WAL_ttl_seconds: 0
+debug   -187> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                       Options.WAL_size_limit_MB: 0
+debug   -186> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:             Options.manifest_preallocation_size: 4194304
+debug   -185> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                     Options.is_fd_close_on_exec: 1
+debug   -184> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                   Options.advise_random_on_open: 1
+debug   -183> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                    Options.db_write_buffer_size: 0
+debug   -182> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                    Options.write_buffer_manager: 0x5567c54f0420
+debug   -181> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:         Options.access_hint_on_compaction_start: 1
+debug   -180> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:  Options.new_table_reader_for_compaction_inputs: 0
+debug   -179> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:           Options.random_access_max_buffer_size: 1048576
+debug   -178> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                      Options.use_adaptive_mutex: 0
+debug   -177> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                            Options.rate_limiter: (nil)
+debug   -176> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:     Options.sst_file_manager.rate_bytes_per_sec: 0
+debug   -175> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                       Options.wal_recovery_mode: 2
+debug   -174> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                  Options.enable_thread_tracking: 0
+debug   -173> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                  Options.enable_pipelined_write: 0
+debug   -172> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:         Options.allow_concurrent_memtable_write: 1
+debug   -171> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:      Options.enable_write_thread_adaptive_yield: 1
+debug   -170> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:             Options.write_thread_max_yield_usec: 100
+debug   -169> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:            Options.write_thread_slow_yield_usec: 3
+debug   -168> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                               Options.row_cache: None
+debug   -167> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                              Options.wal_filter: None
+debug   -166> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:             Options.avoid_flush_during_recovery: 0
+debug   -165> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:             Options.allow_ingest_behind: 0
+debug   -164> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:             Options.preserve_deletes: 0
+debug   -163> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:             Options.two_write_queues: 0
+debug   -162> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:             Options.manual_wal_flush: 0
+debug   -161> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:             Options.atomic_flush: 0
+debug   -160> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:             Options.avoid_unnecessary_blocking_io: 0
+debug   -159> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:             Options.max_background_jobs: 2
+debug   -158> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:             Options.max_background_compactions: -1
+debug   -157> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:             Options.avoid_flush_during_shutdown: 0
+debug   -156> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:           Options.writable_file_max_buffer_size: 1048576
+debug   -155> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:             Options.delayed_write_rate : 16777216
+debug   -154> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:             Options.max_total_wal_size: 0
+debug   -153> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:             Options.delete_obsolete_files_period_micros: 21600000000
+debug   -152> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                   Options.stats_dump_period_sec: 600
+debug   -151> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                 Options.stats_persist_period_sec: 600
+debug   -150> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                 Options.stats_history_buffer_size: 1048576
+debug   -149> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                          Options.max_open_files: -1
+debug   -148> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                          Options.bytes_per_sync: 0
+debug   -147> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:                      Options.wal_bytes_per_sync: 0
+debug   -146> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb:       Options.compaction_readahead_size: 0
+debug   -145> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb: Compression algorithms supported:
+debug   -144> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb: 	kZSTDNotFinalCompression supported: 0
+debug   -143> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb: 	kZSTD supported: 0
+debug   -142> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb: 	kXpressCompression supported: 0
+debug   -141> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb: 	kLZ4HCCompression supported: 1
+debug   -140> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb: 	kLZ4Compression supported: 1
+debug   -139> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb: 	kBZip2Compression supported: 0
+debug   -138> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb: 	kZlibCompression supported: 1
+debug   -137> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb: 	kSnappyCompression supported: 1
+debug   -136> 2020-11-19 05:47:31.779 7fd570d8a040  4 rocksdb: Fast CRC32 supported: Supported on x86
+debug   -135> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb: [db/version_set.cc:3543] Recovering from manifest file: /var/lib/ceph/mon/ceph-b/store.db/MANIFEST-362705
+
+debug   -134> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb: [db/column_family.cc:477] --------------- Options for column family [default]:
+
+debug   -133> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:               Options.comparator: leveldb.BytewiseComparator
+debug   -132> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:           Options.merge_operator: 
+debug   -131> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:        Options.compaction_filter: None
+debug   -130> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:        Options.compaction_filter_factory: None
+debug   -129> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:         Options.memtable_factory: SkipListFactory
+debug   -128> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:            Options.table_factory: BlockBasedTable
+debug   -127> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:            table_factory options:   flush_block_policy_factory: FlushBlockBySizePolicyFactory (0x5567c4786248)
+  cache_index_and_filter_blocks: 1
+  cache_index_and_filter_blocks_with_high_priority: 1
+  pin_l0_filter_and_index_blocks_in_cache: 0
+  pin_top_level_index_and_filter: 1
+  index_type: 0
+  data_block_index_type: 0
+  data_block_hash_table_util_ratio: 0.750000
+  hash_index_allow_collision: 1
+  checksum: 1
+  no_block_cache: 0
+  block_cache: 0x5567c47a2f10
+  block_cache_name: BinnedLRUCache
+  block_cache_options:
+    capacity : 536870912
+    num_shard_bits : 4
+    strict_capacity_limit : 0
+    high_pri_pool_ratio: 0.000
+  block_cache_compressed: (nil)
+  persistent_cache: (nil)
+  block_size: 4096
+  block_size_deviation: 10
+  block_restart_interval: 16
+  index_block_restart_interval: 1
+  metadata_block_size: 4096
+  partition_filters: 0
+  use_delta_encoding: 1
+  filter_policy: rocksdb.BuiltinBloomFilter
+  whole_key_filtering: 1
+  verify_compression: 0
+  read_amp_bytes_per_bit: 0
+  format_version: 2
+  enable_index_compression: 1
+  block_align: 0
+
+debug   -126> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:        Options.write_buffer_size: 33554432
+debug   -125> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:  Options.max_write_buffer_number: 2
+debug   -124> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:          Options.compression: NoCompression
+debug   -123> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:                  Options.bottommost_compression: Disabled
+debug   -122> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:       Options.prefix_extractor: nullptr
+debug   -121> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:   Options.memtable_insert_with_hint_prefix_extractor: nullptr
+debug   -120> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:             Options.num_levels: 7
+debug   -119> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:        Options.min_write_buffer_number_to_merge: 1
+debug   -118> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:     Options.max_write_buffer_number_to_maintain: 0
+debug   -117> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:            Options.bottommost_compression_opts.window_bits: -14
+debug   -116> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:                  Options.bottommost_compression_opts.level: 32767
+debug   -115> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:               Options.bottommost_compression_opts.strategy: 0
+debug   -114> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:         Options.bottommost_compression_opts.max_dict_bytes: 0
+debug   -113> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:         Options.bottommost_compression_opts.zstd_max_train_bytes: 0
+debug   -112> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:                  Options.bottommost_compression_opts.enabled: false
+debug   -111> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:            Options.compression_opts.window_bits: -14
+debug   -110> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:                  Options.compression_opts.level: 32767
+debug   -109> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:               Options.compression_opts.strategy: 0
+debug   -108> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:         Options.compression_opts.max_dict_bytes: 0
+debug   -107> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:         Options.compression_opts.zstd_max_train_bytes: 0
+debug   -106> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:                  Options.compression_opts.enabled: false
+debug   -105> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:      Options.level0_file_num_compaction_trigger: 4
+debug   -104> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:          Options.level0_slowdown_writes_trigger: 20
+debug   -103> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:              Options.level0_stop_writes_trigger: 36
+debug   -102> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:                   Options.target_file_size_base: 67108864
+debug   -101> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:             Options.target_file_size_multiplier: 1
+debug   -100> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:                Options.max_bytes_for_level_base: 268435456
+debug    -99> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb: Options.level_compaction_dynamic_level_bytes: 1
+debug    -98> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:          Options.max_bytes_for_level_multiplier: 10.000000
+debug    -97> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb: Options.max_bytes_for_level_multiplier_addtl[0]: 1
+debug    -96> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb: Options.max_bytes_for_level_multiplier_addtl[1]: 1
+debug    -95> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb: Options.max_bytes_for_level_multiplier_addtl[2]: 1
+debug    -94> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb: Options.max_bytes_for_level_multiplier_addtl[3]: 1
+debug    -93> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb: Options.max_bytes_for_level_multiplier_addtl[4]: 1
+debug    -92> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb: Options.max_bytes_for_level_multiplier_addtl[5]: 1
+debug    -91> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb: Options.max_bytes_for_level_multiplier_addtl[6]: 1
+debug    -90> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:       Options.max_sequential_skip_in_iterations: 8
+debug    -89> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:                    Options.max_compaction_bytes: 1677721600
+debug    -88> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:                        Options.arena_block_size: 4194304
+debug    -87> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:   Options.soft_pending_compaction_bytes_limit: 68719476736
+debug    -86> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:   Options.hard_pending_compaction_bytes_limit: 274877906944
+debug    -85> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:       Options.rate_limit_delay_max_milliseconds: 100
+debug    -84> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:                Options.disable_auto_compactions: 0
+debug    -83> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:                        Options.compaction_style: kCompactionStyleLevel
+debug    -82> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:                          Options.compaction_pri: kMinOverlappingRatio
+debug    -81> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb: Options.compaction_options_universal.size_ratio: 1
+debug    -80> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb: Options.compaction_options_universal.min_merge_width: 2
+debug    -79> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb: Options.compaction_options_universal.max_merge_width: 4294967295
+debug    -78> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb: Options.compaction_options_universal.max_size_amplification_percent: 200
+debug    -77> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb: Options.compaction_options_universal.compression_size_percent: -1
+debug    -76> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb: Options.compaction_options_universal.stop_style: kCompactionStopStyleTotalSize
+debug    -75> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb: Options.compaction_options_fifo.max_table_files_size: 1073741824
+debug    -74> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb: Options.compaction_options_fifo.allow_compaction: 0
+debug    -73> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:                   Options.table_properties_collectors: 
+debug    -72> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:                   Options.inplace_update_support: 0
+debug    -71> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:                 Options.inplace_update_num_locks: 10000
+debug    -70> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:               Options.memtable_prefix_bloom_size_ratio: 0.000000
+debug    -69> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:               Options.memtable_whole_key_filtering: 0
+debug    -68> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:   Options.memtable_huge_page_size: 0
+debug    -67> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:                           Options.bloom_locality: 0
+debug    -66> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:                    Options.max_successive_merges: 0
+debug    -65> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:                Options.optimize_filters_for_hits: 0
+debug    -64> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:                Options.paranoid_file_checks: 0
+debug    -63> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:                Options.force_consistency_checks: 0
+debug    -62> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:                Options.report_bg_io_stats: 0
+debug    -61> 2020-11-19 05:47:31.780 7fd570d8a040  4 rocksdb:                               Options.ttl: 0
+debug    -60> 2020-11-19 05:47:31.792 7fd570d8a040  3 rocksdb: [db/version_set.cc:2581] More existing levels in DB than needed. max_bytes_for_level_multiplier may not be guaranteed.
+debug    -59> 2020-11-19 05:47:31.792 7fd570d8a040  4 rocksdb: [db/version_set.cc:3757] Recovered from manifest file:/var/lib/ceph/mon/ceph-b/store.db/MANIFEST-362705 succeeded,manifest_file_number is 362705, next_file_number is 362707, last_sequence is 149449722, log_number is 362704,prev_log_number is 0,max_column_family is 0,min_log_number_to_keep is 0
+
+debug    -58> 2020-11-19 05:47:31.792 7fd570d8a040  4 rocksdb: [db/version_set.cc:3766] Column family [default] (ID 0), log number is 362704
+
+debug    -57> 2020-11-19 05:47:31.792 7fd570d8a040  4 rocksdb: EVENT_LOG_v1 {"time_micros": 1605764851793410, "job": 1, "event": "recovery_started", "log_files": [362706]}
+debug    -56> 2020-11-19 05:47:31.792 7fd570d8a040  4 rocksdb: [db/db_impl_open.cc:583] Recovering log #362706 mode 2
+debug    -55> 2020-11-19 05:47:31.792 7fd570d8a040  4 rocksdb: [db/version_set.cc:3036] Creating manifest 362708
+
+debug    -54> 2020-11-19 05:47:31.793 7fd570d8a040  3 rocksdb: [db/version_set.cc:2581] More existing levels in DB than needed. max_bytes_for_level_multiplier may not be guaranteed.
+debug    -53> 2020-11-19 05:47:31.794 7fd570d8a040  4 rocksdb: EVENT_LOG_v1 {"time_micros": 1605764851795506, "job": 1, "event": "recovery_finished"}
+debug    -52> 2020-11-19 05:47:31.797 7fd570d8a040  4 rocksdb: DB pointer 0x5567c53cf200
+debug    -51> 2020-11-19 05:47:31.798 7fd55661e700  4 rocksdb: [db/db_impl.cc:777] ------- DUMPING STATS -------
+debug    -50> 2020-11-19 05:47:31.798 7fd55661e700  4 rocksdb: [db/db_impl.cc:778] 
+** DB Stats **
+Uptime(secs): 0.0 total, 0.0 interval
+Cumulative writes: 0 writes, 0 keys, 0 commit groups, 0.0 writes per commit group, ingest: 0.00 GB, 0.00 MB/s
+Cumulative WAL: 0 writes, 0 syncs, 0.00 writes per sync, written: 0.00 GB, 0.00 MB/s
+Cumulative stall: 00:00:0.000 H:M:S, 0.0 percent
+Interval writes: 0 writes, 0 keys, 0 commit groups, 0.0 writes per commit group, ingest: 0.00 MB, 0.00 MB/s
+Interval WAL: 0 writes, 0 syncs, 0.00 writes per sync, written: 0.00 MB, 0.00 MB/s
+Interval stall: 00:00:0.000 H:M:S, 0.0 percent
+
+** Compaction Stats [default] **
+Level    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  L0      1/0   180.75 KB   0.2      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0
+  L6      1/0   23.80 MB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0
+ Sum      2/0   23.98 MB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0
+ Int      0/0    0.00 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0
+
+** Compaction Stats [default] **
+Priority    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Uptime(secs): 0.0 total, 0.0 interval
+Flush(GB): cumulative 0.000, interval 0.000
+AddFile(GB): cumulative 0.000, interval 0.000
+AddFile(Total Files): cumulative 0, interval 0
+AddFile(L0 Files): cumulative 0, interval 0
+AddFile(Keys): cumulative 0, interval 0
+Cumulative compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
+Interval compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
+Stalls(count): 0 level0_slowdown, 0 level0_slowdown_with_compaction, 0 level0_numfiles, 0 level0_numfiles_with_compaction, 0 stop for pending_compaction_bytes, 0 slowdown for pending_compaction_bytes, 0 memtable_compaction, 0 memtable_slowdown, interval 0 total count
+
+** File Read Latency Histogram By Level [default] **
+
+** Compaction Stats [default] **
+Level    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  L0      1/0   180.75 KB   0.2      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0
+  L6      1/0   23.80 MB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0
+ Sum      2/0   23.98 MB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0
+ Int      0/0    0.00 KB   0.0      0.0     0.0      0.0       0.0      0.0       0.0   0.0      0.0      0.0      0.00              0.00         0    0.000       0      0
+
+** Compaction Stats [default] **
+Priority    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Moved(GB) W-Amp Rd(MB/s) Wr(MB/s) Comp(sec) CompMergeCPU(sec) Comp(cnt) Avg(sec) KeyIn KeyDrop
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Uptime(secs): 0.0 total, 0.0 interval
+Flush(GB): cumulative 0.000, interval 0.000
+AddFile(GB): cumulative 0.000, interval 0.000
+AddFile(Total Files): cumulative 0, interval 0
+AddFile(L0 Files): cumulative 0, interval 0
+AddFile(Keys): cumulative 0, interval 0
+Cumulative compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
+Interval compaction: 0.00 GB write, 0.00 MB/s write, 0.00 GB read, 0.00 MB/s read, 0.0 seconds
+Stalls(count): 0 level0_slowdown, 0 level0_slowdown_with_compaction, 0 level0_numfiles, 0 level0_numfiles_with_compaction, 0 stop for pending_compaction_bytes, 0 slowdown for pending_compaction_bytes, 0 memtable_compaction, 0 memtable_slowdown, interval 0 total count
+
+** File Read Latency Histogram By Level [default] **
+
+debug    -49> 2020-11-19 05:47:31.798 7fd570d8a040  5 AuthRegistry(0x5567c4815338) adding auth protocol: cephx
+debug    -48> 2020-11-19 05:47:31.798 7fd570d8a040  5 AuthRegistry(0x5567c4815338) adding auth protocol: cephx
+debug    -47> 2020-11-19 05:47:31.798 7fd570d8a040  5 AuthRegistry(0x5567c4815338) adding auth protocol: cephx
+debug    -46> 2020-11-19 05:47:31.798 7fd570d8a040  5 AuthRegistry(0x5567c4815338) adding auth protocol: none
+debug    -45> 2020-11-19 05:47:31.798 7fd570d8a040  5 AuthRegistry(0x5567c4815338) adding con mode: secure
+debug    -44> 2020-11-19 05:47:31.798 7fd570d8a040  5 AuthRegistry(0x5567c4815338) adding con mode: crc
+debug    -43> 2020-11-19 05:47:31.798 7fd570d8a040  5 AuthRegistry(0x5567c4815338) adding con mode: secure
+debug    -42> 2020-11-19 05:47:31.798 7fd570d8a040  5 AuthRegistry(0x5567c4815338) adding con mode: crc
+debug    -41> 2020-11-19 05:47:31.798 7fd570d8a040  5 AuthRegistry(0x5567c4815338) adding con mode: secure
+debug    -40> 2020-11-19 05:47:31.798 7fd570d8a040  5 AuthRegistry(0x5567c4815338) adding con mode: crc
+debug    -39> 2020-11-19 05:47:31.798 7fd570d8a040  5 AuthRegistry(0x5567c4815338) adding con mode: crc
+debug    -38> 2020-11-19 05:47:31.798 7fd570d8a040  5 AuthRegistry(0x5567c4815338) adding con mode: secure
+debug    -37> 2020-11-19 05:47:31.798 7fd570d8a040  5 AuthRegistry(0x5567c4815338) adding con mode: crc
+debug    -36> 2020-11-19 05:47:31.798 7fd570d8a040  5 AuthRegistry(0x5567c4815338) adding con mode: secure
+debug    -35> 2020-11-19 05:47:31.798 7fd570d8a040  5 AuthRegistry(0x5567c4815338) adding con mode: crc
+debug    -34> 2020-11-19 05:47:31.798 7fd570d8a040  5 AuthRegistry(0x5567c4815338) adding con mode: secure
+debug    -33> 2020-11-19 05:47:31.799 7fd570d8a040  2 auth: KeyRing::load: loaded key file /etc/ceph/keyring-store/keyring
+debug    -32> 2020-11-19 05:47:31.801 7fd570d8a040  0 starting mon.b rank 0 at public addrs [v2:10.104.200.156:3300/0,v1:10.104.200.156:6789/0] at bind addrs [v2:10.244.194.133:3300/0,v1:10.244.194.133:6789/0] mon_data /var/lib/ceph/mon/ceph-b fsid dedb80df-d16c-4a90-912e-a833a97c3f52
+debug    -31> 2020-11-19 05:47:31.801 7fd570d8a040  5 AuthRegistry(0x5567c4814a38) adding auth protocol: cephx
+debug    -30> 2020-11-19 05:47:31.801 7fd570d8a040  5 AuthRegistry(0x5567c4814a38) adding auth protocol: cephx
+debug    -29> 2020-11-19 05:47:31.801 7fd570d8a040  5 AuthRegistry(0x5567c4814a38) adding auth protocol: cephx
+debug    -28> 2020-11-19 05:47:31.801 7fd570d8a040  5 AuthRegistry(0x5567c4814a38) adding auth protocol: none
+debug    -27> 2020-11-19 05:47:31.801 7fd570d8a040  5 AuthRegistry(0x5567c4814a38) adding con mode: secure
+debug    -26> 2020-11-19 05:47:31.801 7fd570d8a040  5 AuthRegistry(0x5567c4814a38) adding con mode: crc
+debug    -25> 2020-11-19 05:47:31.801 7fd570d8a040  5 AuthRegistry(0x5567c4814a38) adding con mode: secure
+debug    -24> 2020-11-19 05:47:31.801 7fd570d8a040  5 AuthRegistry(0x5567c4814a38) adding con mode: crc
+debug    -23> 2020-11-19 05:47:31.801 7fd570d8a040  5 AuthRegistry(0x5567c4814a38) adding con mode: secure
+debug    -22> 2020-11-19 05:47:31.801 7fd570d8a040  5 AuthRegistry(0x5567c4814a38) adding con mode: crc
+debug    -21> 2020-11-19 05:47:31.801 7fd570d8a040  5 AuthRegistry(0x5567c4814a38) adding con mode: crc
+debug    -20> 2020-11-19 05:47:31.801 7fd570d8a040  5 AuthRegistry(0x5567c4814a38) adding con mode: secure
+debug    -19> 2020-11-19 05:47:31.801 7fd570d8a040  5 AuthRegistry(0x5567c4814a38) adding con mode: crc
+debug    -18> 2020-11-19 05:47:31.801 7fd570d8a040  5 AuthRegistry(0x5567c4814a38) adding con mode: secure
+debug    -17> 2020-11-19 05:47:31.801 7fd570d8a040  5 AuthRegistry(0x5567c4814a38) adding con mode: crc
+debug    -16> 2020-11-19 05:47:31.801 7fd570d8a040  5 AuthRegistry(0x5567c4814a38) adding con mode: secure
+debug    -15> 2020-11-19 05:47:31.801 7fd570d8a040  2 auth: KeyRing::load: loaded key file /etc/ceph/keyring-store/keyring
+debug    -14> 2020-11-19 05:47:31.801 7fd570d8a040  5 adding auth protocol: cephx
+debug    -13> 2020-11-19 05:47:31.801 7fd570d8a040  5 adding auth protocol: cephx
+debug    -12> 2020-11-19 05:47:31.801 7fd570d8a040 10 log_channel(cluster) update_config to_monitors: true to_syslog: false syslog_facility: daemon prio: info to_graylog: false graylog_host: 127.0.0.1 graylog_port: 12201)
+debug    -11> 2020-11-19 05:47:31.801 7fd570d8a040 10 log_channel(audit) update_config to_monitors: true to_syslog: false syslog_facility: local0 prio: info to_graylog: false graylog_host: 127.0.0.1 graylog_port: 12201)
+debug    -10> 2020-11-19 05:47:31.805 7fd570d8a040  1 mon.b@-1(???) e7 preinit fsid dedb80df-d16c-4a90-912e-a833a97c3f52
+debug     -9> 2020-11-19 05:47:31.806 7fd570d8a040  5 mon.b@-1(???).mds e0 Unable to load 'last_metadata'
+debug     -8> 2020-11-19 05:47:31.806 7fd570d8a040  0 mon.b@-1(???).mds e1 new map
+debug     -7> 2020-11-19 05:47:31.806 7fd570d8a040  0 mon.b@-1(???).mds e1 print_map
+e1
+enable_multiple, ever_enabled_multiple: 0,0
+compat: compat={},rocompat={},incompat={1=base v0.20,2=client writeable ranges,3=default file layouts on dirs,4=dir inode in separate object,5=mds uses versioned encoding,6=dirfrag is stored in omap,8=no anchor table,9=file layout v2,10=snaprealm v2}
+legacy client fscid: -1
+ 
+No filesystems configured
+
+debug     -6> 2020-11-19 05:47:31.806 7fd570d8a040  0 mon.b@-1(???).osd e151 crush map has features 288514051259236352, adjusting msgr requires
+debug     -5> 2020-11-19 05:47:31.806 7fd570d8a040  0 mon.b@-1(???).osd e151 crush map has features 288514051259236352, adjusting msgr requires
+debug     -4> 2020-11-19 05:47:31.806 7fd570d8a040  0 mon.b@-1(???).osd e151 crush map has features 3314933000852226048, adjusting msgr requires
+debug     -3> 2020-11-19 05:47:31.806 7fd570d8a040  0 mon.b@-1(???).osd e151 crush map has features 288514051259236352, adjusting msgr requires
+debug     -2> 2020-11-19 05:47:31.807 7fd570d8a040  1 mon.b@-1(???).paxosservice(auth 4251..4503) refresh upgraded, format 0 -> 3
+debug     -1> 2020-11-19 05:47:31.809 7fd570d8a040 -1 /home/jenkins-build/build/workspace/ceph-build/ARCH/x86_64/AVAILABLE_ARCH/x86_64/AVAILABLE_DIST/centos7/DIST/centos7/MACHINE_SIZE/huge/release/14.2.8/rpm/el7/BUILD/ceph-14.2.8/src/mon/AuthMonitor.cc: In function 'virtual void AuthMonitor::update_from_paxos(bool*)' thread 7fd570d8a040 time 2020-11-19 05:47:31.809152
+/home/jenkins-build/build/workspace/ceph-build/ARCH/x86_64/AVAILABLE_ARCH/x86_64/AVAILABLE_DIST/centos7/DIST/centos7/MACHINE_SIZE/huge/release/14.2.8/rpm/el7/BUILD/ceph-14.2.8/src/mon/AuthMonitor.cc: 278: FAILED ceph_assert(ret == 0)
+
+ ceph version 14.2.8 (2d095e947a02261ce61424021bb43bd3022d35cb) nautilus (stable)
+ 1: (ceph::__ceph_assert_fail(char const*, char const*, int, char const*)+0x14a) [0x7fd567ffc325]
+ 2: (()+0x2534ed) [0x7fd567ffc4ed]
+ 3: (AuthMonitor::update_from_paxos(bool*)+0x1b0a) [0x5567c1b31f3a]
+ 4: (PaxosService::refresh(bool*)+0x103) [0x5567c1bc53a3]
+ 5: (Monitor::refresh_from_paxos(bool*)+0x194) [0x5567c1ab3514]
+ 6: (Monitor::init_paxos()+0xfc) [0x5567c1ab37ec]
+ 7: (Monitor::preinit()+0xa32) [0x5567c1ad2532]
+ 8: (main()+0x23e2) [0x5567c1a6bfc2]
+ 9: (__libc_start_main()+0xf5) [0x7fd563bd2555]
+ 10: (()+0x2332d0) [0x5567c1a9d2d0]
+
+debug      0> 2020-11-19 05:47:31.812 7fd570d8a040 -1 *** Caught signal (Aborted) **
+ in thread 7fd570d8a040 thread_name:ceph-mon
+
+ ceph version 14.2.8 (2d095e947a02261ce61424021bb43bd3022d35cb) nautilus (stable)
+ 1: (()+0xf630) [0x7fd564df2630]
+ 2: (gsignal()+0x37) [0x7fd563be6387]
+ 3: (abort()+0x148) [0x7fd563be7a78]
+ 4: (ceph::__ceph_assert_fail(char const*, char const*, int, char const*)+0x199) [0x7fd567ffc374]
+ 5: (()+0x2534ed) [0x7fd567ffc4ed]
+ 6: (AuthMonitor::update_from_paxos(bool*)+0x1b0a) [0x5567c1b31f3a]
+ 7: (PaxosService::refresh(bool*)+0x103) [0x5567c1bc53a3]
+ 8: (Monitor::refresh_from_paxos(bool*)+0x194) [0x5567c1ab3514]
+ 9: (Monitor::init_paxos()+0xfc) [0x5567c1ab37ec]
+ 10: (Monitor::preinit()+0xa32) [0x5567c1ad2532]
+ 11: (main()+0x23e2) [0x5567c1a6bfc2]
+ 12: (__libc_start_main()+0xf5) [0x7fd563bd2555]
+ 13: (()+0x2332d0) [0x5567c1a9d2d0]
+ NOTE: a copy of the executable, or `objdump -rdS <executable>` is needed to interpret this.
+
+--- logging levels ---
+   0/ 5 none
+   0/ 1 lockdep
+   0/ 1 context
+   1/ 1 crush
+   1/ 5 mds
+   1/ 5 mds_balancer
+   1/ 5 mds_locker
+   1/ 5 mds_log
+   1/ 5 mds_log_expire
+   1/ 5 mds_migrator
+   0/ 1 buffer
+   0/ 1 timer
+   0/ 1 filer
+   0/ 1 striper
+   0/ 1 objecter
+   0/ 5 rados
+   0/ 5 rbd
+   0/ 5 rbd_mirror
+   0/ 5 rbd_replay
+   0/ 5 journaler
+   0/ 5 objectcacher
+   0/ 5 client
+   1/ 5 osd
+   0/ 5 optracker
+   0/ 5 objclass
+   1/ 3 filestore
+   1/ 3 journal
+   0/ 0 ms
+   1/ 5 mon
+   0/10 monc
+   1/ 5 paxos
+   0/ 5 tp
+   1/ 5 auth
+   1/ 5 crypto
+   1/ 1 finisher
+   1/ 1 reserver
+   1/ 5 heartbeatmap
+   1/ 5 perfcounter
+   1/ 5 rgw
+   1/ 5 rgw_sync
+   1/10 civetweb
+   1/ 5 javaclient
+   1/ 5 asok
+   1/ 1 throttle
+   0/ 0 refs
+   1/ 5 xio
+   1/ 5 compressor
+   1/ 5 bluestore
+   1/ 5 bluefs
+   1/ 3 bdev
+   1/ 5 kstore
+   4/ 5 rocksdb
+   4/ 5 leveldb
+   4/ 5 memdb
+   1/ 5 kinetic
+   1/ 5 fuse
+   1/ 5 mgr
+   1/ 5 mgrc
+   1/ 5 dpdk
+   1/ 5 eventtrace
+   1/ 5 prioritycache
+  -2/-2 (syslog threshold)
+  99/99 (stderr threshold)
+  max_recent     10000
+  max_new         1000
+  log_file /var/lib/ceph/crash/2020-11-19_05:47:31.812511Z_6702f756-99c5-4ede-a198-2a65d800e691/log
+--- end dump of recent events ---
+reraise_fatal: default handler for signal 6 didn't terminate the process?
